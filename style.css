@@ -1,11 +1,76 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(27, 17, 36);
-    font-family: 'inter';
     color: rgb(235, 235, 240);
+    font-family: 'Inter';
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    margin: 25px auto 0;
+    padding: 18px 35px;
+    background-color: rgb(20, 15, 30);
+    border-radius: 30px;
+    isolation: isolate;
+}
+
+header::before {
+    content: "";
+
+    position: absolute;
+    inset: -2px;
+
+    border-radius: 32px;
+
+    background: conic-gradient(
+        blue,
+        rgb(70, 0, 128),
+        blue,
+        transparent,
+        blue
+    );
+
+    animation: girar 3s linear infinite;
+
+    z-index: -2;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 28px;
+    background-color: rgb(20, 15, 30);
+
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(100, 170, 255);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.apresentacao{
+    text-align: center;
+}
+
+.apresentacao span{
+    color: purple;
 }
