@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(27, 17, 36);
+    font-family: 'inter';
+    color: rgb(235, 235, 240);
+}
